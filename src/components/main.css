@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
 .main{
   background-color: white;
   padding: 30px;
@@ -10,4 +16,74 @@
 .main h1{
   font-size: 20px;
   text-align: center;
+}
+
+.form{
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form input[type="text"]{
+  height: 40px;
+  padding: 0 20px;
+  font-size: 20px;
+  border: 1px solid #ccc;
+  min-width: 80%;
+}
+
+.form button[type="submit"]{
+  border: none;
+  height: 40px;
+  width: 40px;
+  background-color: #f04c64;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tarefas{
+  margin-top: 30px;
+}
+
+.tarefas li{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  transition: all 600ms;
+}
+
+.tarefas li:hover{
+  background-color: #375174;
+}
+
+.tarefas li .edit {
+  margin-right: 15px;
+  color: #375174 ;
+}
+
+.tarefas li .delete{
+  margin-right: 15px;
+  color: #f04c64 ;
+}
+
+.tarefas li:hover .edit, .tarefas li:hover .delete{
+  color: rgb(255, 255, 255);
+}
+
+.tarefas li:hover{
+  color: white;
+}
+
+.tarefas li .edit, .tarefas li .delete{
+  cursor: pointer;
+  transition: all 600ms;
+}
+
+.tarefas li span{
+  display: flex;
+  align-items: center;
 }
